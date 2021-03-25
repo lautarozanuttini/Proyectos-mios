@@ -1,0 +1,261 @@
+@font-face {
+    font-family: "display";
+    src: url("Tipo/digital-7.ttf");
+  }
+
+.carcasa_atras{
+    background-color: rgb(185, 185, 185);
+    margin: auto;
+    width: 600px;
+    height: 200px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.carcasa_adelante{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    margin-top:10px;
+    width: 580px;
+    height: 100px;
+    display:flex;
+    border-radius: 20px;
+    justify-content: flex-end;
+}
+
+.luz{
+    margin-right: 5px;
+    margin-top: 70px;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: grey;
+    transition:all 1s;
+}
+
+.prendido{
+    background-color: red;
+}
+
+p{
+    font-family: display;
+}
+
+.display{
+    background-color: rgb(209, 209, 209);
+    margin-top: 60px;
+    margin-right: 30px;
+    width: 60px;
+    height: 30px;
+    display:flex;
+    border-radius: 10px;
+   
+}
+
+p{
+    margin:auto;
+    font-size: 20px;
+    transition:all 1s;
+}
+
+.ventilas{
+    background-color: rgb(87, 87, 87);
+    margin: auto;
+    margin-top:5px;
+    margin-bottom: 10px;
+    width: 580px;
+    height: 70px;
+    display:flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.paleta{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+}
+
+.prendidas{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+    animation-name: prendidas;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transition: all 1s;
+}
+
+@keyframes prendidas{
+from{
+    height: 20px;
+}to{
+    height: 10px;
+}
+}
+
+.apagadas{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+    animation-name: apagadas;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transition: all 1s;
+}
+
+@keyframes apagadas{
+from{
+    height: 10px;
+}to{
+    height: 20px;
+}
+}
+
+.auto{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+    animation-name: auto;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes auto{
+0%{
+    height: 20px;
+}25%{
+    height: 15px;
+}50%{
+    height: 10px;
+}
+}
+
+.posicion0{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+    animation-name: posicion0;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transition: all 1s;
+}
+
+@keyframes posicion0{
+    from{
+        height: 10px;
+    }to{
+        height: 15px;
+    } 
+}
+
+.posicion1{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+    animation-name: posicion1;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transition: all 1s;
+}
+
+@keyframes posicion1{
+    from{
+        height: 15px;
+    }to{
+        height: 20px;
+    } 
+}
+
+.posicion2{
+    background-color: rgb(167, 164, 164);
+    margin: auto;
+    width: 560px;
+    height: 20px;
+    display:flex;
+    border-radius: 5px;
+    animation-name: posicion2;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    transition: all 1s;
+}
+
+@keyframes posicion2{
+    from{
+        height: 20px;
+    }to{
+        height: 10px;
+    } 
+}
+
+
+
+.contenedorcontrol{
+    background-color: rgb(185, 185, 185);
+    margin: auto;
+    width: 200px;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin-bottom: 100px;
+}
+
+.control{ 
+    margin: auto;
+    margin-top:30px;
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.display2{
+    margin: auto;
+    padding: 5px;
+    width: 100px;
+    height: 70px;
+    background-color: rgb(209, 209, 209);
+    margin-bottom: 30px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#temperaturacontrol{
+    font-size: 70px;
+}
+
+button#prender{
+    width: 100%;
+}
