@@ -135,6 +135,6 @@ function sonidoaireprendido() {
 //sonido botones
 
 var beep = new Audio();
-beep.src = "Sonidos/beep.m4a";
+beep.src = "beep.m4a";
 
 
